@@ -1,16 +1,19 @@
-.body {
+.top {
 
 }
 
 .main {
-   /* overflow: hidden; */
- margin-left: auto;
-  margin-right: auto;
-  /* position: relative; */
+ /* margin-left: auto;
+  margin-right: auto; */
+   /* position: relative; */
+   overflow: hidden;
+   margin-left: -950px;
+   /* margin-right: 25%; */
+   transform: translateX(0%);
+}
 
-   position: absolute;
-
-   margin-left: 50%;
-   transform: translateX(-50%);
-
+div.nav {
+  background-color: #001a4d;
+  color: white;
+  height: 50px;
 }
