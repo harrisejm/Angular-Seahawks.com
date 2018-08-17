@@ -1,12 +1,6 @@
-
-
-
-
 .mainBody {
   background-color: #DCDCDC;
 }
-
-
 
 .top {
 
@@ -64,7 +58,7 @@ div.shop {
   float: right;
 }
 .topStory {
-  border: solid;
+  /* border: solid; */
 
 }
 div.headlines {
@@ -103,11 +97,23 @@ div.buttonBox {
   border-bottom: outset;
 }
 
-
 a.smallArticles {
   font-size: 15px;
   color: black;
 }
+a.moreNews {
+  color: black;
+  text-align: center;
+}
+
 .formateSmallArticles {
   margin: 10px;
+}
+
+.ad1 {
+  margin-top: 5px;
+}
+img.madden {
+ width: 100%;
+ height: 100%;
 }
