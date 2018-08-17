@@ -69,7 +69,6 @@ div.shop {
 }
 div.headlines {
   margin-top: 50px;
-  margin-left: 15px
 }
 .mainStory {
   width: 100%;
@@ -87,4 +86,15 @@ div.mainArticleFormate {
 }
 .mainArticleBody {
  padding: 20px;
+}
+
+button.sideArticles {
+  font-family: Arial, Helvetica, sans-serif;
+ font-size: 15px;
+ background-color: white;
+ border: none;
+ text-align: center;
+}
+div.buttonBox {
+  border-bottom: outset;
 }
