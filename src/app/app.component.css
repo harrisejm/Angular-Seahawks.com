@@ -1,3 +1,24 @@
+.affix {
+    top:0;
+    width: 100%;
+    z-index: 9999;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+
+.affix ~ .container-fluid {
+   position: relative;
+   top: 50px;
+}
+
+
+
+
+
+
+
+
 .top {
 
 }
@@ -13,11 +34,13 @@
 }
 
 div.nav {
-  margin-top: -20px;
+  margin-top: -5px;
   margin-left: -8px;
   background-color: #001a4d;
   color: white;
   height: 62px;
+  width: 100%;
+  position: fixed;
 }
 
 img.logo {
