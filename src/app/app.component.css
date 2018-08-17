@@ -65,7 +65,7 @@ div.shop {
 }
 .topStory {
   border: solid;
-  margin: 10px;
+
 }
 div.headlines {
   margin-top: 50px;
@@ -95,6 +95,19 @@ button.sideArticles {
  border: none;
  text-align: center;
 }
+button.sideArticles:hover {
+  text-decoration: underline;
+}
 div.buttonBox {
+  padding-bottom: 5px;
   border-bottom: outset;
+}
+
+
+a.smallArticles {
+  font-size: 15px;
+  color: black;
+}
+.formateSmallArticles {
+  margin: 10px;
 }
