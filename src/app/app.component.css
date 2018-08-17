@@ -1,8 +1,17 @@
-.main {
-
-  margin-left: auto;
-  margin-right: auto;
-
+.body {
   position: relative;
+   overflow: hidden;
+}
 
+.main {
+   /* overflow: hidden; */
+ margin-left: auto;
+  margin-right: auto;
+  /* position: relative; */
+
+  /* position: absolute;
+
+   margin: auto; */
+   margin-left: 50%;
+   transform: translateX(-50%);
 }
