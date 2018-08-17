@@ -27,16 +27,16 @@ div.nav {
   color: white;
   height: 62px;
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
 }
 
 img.logo {
   width: 50px;
   float: left;
-  margin: 15px;
+
 }
 div.news {
-  margin: 20px
+  margin: 20px;
 }
 a.linkPage {
   font-size: 13px;
@@ -53,4 +53,16 @@ a:visited {
 }
 div.shop {
   float: right;
+}
+.topStory {
+  border: solid;
+  margin: 10px;
+}
+div.headlines {
+  margin-top: 50px;
+  margin-left: 15px
+}
+.mainStory {
+  width: 100%;
+  height: 100%;
 }
