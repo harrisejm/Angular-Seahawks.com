@@ -3,7 +3,7 @@
 
 
 .mainBody {
-  background-color: #F8F8FF;
+  background-color: #DCDCDC;
 }
 
 
@@ -46,12 +46,19 @@ a.linkPage {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
 }
+a.headlineLink{
+  text-decoration: none;
+  color: black;
+}
+a.headlineLink:visited {
+  color: black;
+}
+
 a.linkPage:hover {
   text-decoration: underline;
 }
 a:visited {
   color: white;
-
 }
 div.shop {
   float: right;
@@ -71,6 +78,13 @@ div.headlines {
 
 p.mainArticle {
   font-size: 50px;
-  font-family: Arial, Helvetica, sans-serif;
   line-height: 55px;
+
+}
+div.mainArticleFormate {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+.mainArticleBody {
+ padding: 20px;
 }
