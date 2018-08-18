@@ -1,0 +1,42 @@
+div.featuredContentBox {
+  margin-top: 20px;
+border-bottom: solid;
+border-bottom-width: 1px;
+border-color: gray;
+}
+div.featuredContent {
+  border-bottom: solid;
+  width: 187px;
+}
+p.featuredBody{
+  font-size: 20px;
+  font-weight: bold;
+}
+div p.newsHeader {
+  color: gray;
+}
+
+div.featured {
+  margin-top: 30px;
+}
+
+.featuredStory {
+  width: 100%;
+  height: 100%;
+}
+
+a.headlineLink{
+  text-decoration: none;
+  color: black;
+}
+a.headlineLink:visited {
+  color: black;
+}
+
+div.mainArticleFormate {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+.mainArticleBody {
+ padding: 20px;
+}

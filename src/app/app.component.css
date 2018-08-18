@@ -64,9 +64,7 @@ div.shop {
 div.headlines {
   margin-top: 50px;
 }
-div.featured {
-  margin-top: 30px;
-}
+
 .mainStory {
   width: 100%;
   height: 100%;
@@ -122,21 +120,4 @@ a.moreNews {
 img.madden {
  width: 100%;
  height: 100%;
-}
-div.featuredContentBox {
-  margin-top: 20px;
-border-bottom: solid;
-border-bottom-width: 1px;
-border-color: gray;
-}
-div.featuredContent {
-  border-bottom: solid;
-  width: 187px;
-}
-div.featuredBody{
-  font-size: 20px;
-  font-style:
-}
-div p.news {
-  color: gray;
 }

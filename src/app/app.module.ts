@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { FeaturedComponent } from './featured/featured.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FeaturedComponent
   ],
   imports: [
     BrowserModule
