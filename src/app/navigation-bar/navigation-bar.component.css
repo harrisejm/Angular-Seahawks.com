@@ -1,0 +1,36 @@
+
+div.nav {
+  margin-top: -5px;
+  margin-left: -8px;
+  background-color: #001a4d;
+  color: white;
+  height: 62px;
+  width: 100%;
+  /* position: fixed; */
+}
+
+img.logo {
+  width: 50px;
+  /* float: left; */
+
+}
+div.news {
+  margin: 20px;
+  width: 100%;
+
+}
+a.linkPage {
+  font-size: 13px;
+  margin-left: 20px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a.linkPage:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: white;
+}
+div.shop {
+  float: right;
+}

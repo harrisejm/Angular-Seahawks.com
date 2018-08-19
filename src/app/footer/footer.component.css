@@ -1,0 +1,83 @@
+div.footer {
+  height: 190px;
+  background-color: #001a4d;
+  color: #DCDCDC;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 11px;
+  text-align: center;
+}
+div.navBarFooter {
+  margin-top: 35px;
+  background-color: black;
+  height: 50px;
+  border: solid;
+  border-color: white;
+}
+.teamFooter {
+  background-color: #1a1a1a;
+    width: 100%;
+    height: 430px;
+}
+div.appLink {
+  padding-top: 8px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  text-align: center;
+background-color: #1a1a1a;
+  color: gray;
+  height: 82px;
+  border-top: solid;
+  border-width: 1px;
+  border-color:  #404040;
+}
+.downloadApps {
+
+}
+.moveApp {
+  margin-bottom: -6px;
+}
+.app {
+  width: 100px;
+  margin-left: 15px;
+  margin-right: 15px;
+
+}
+img.seahawksLogo {
+  width: 65px;
+  padding-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.copywrite {
+  margin-top: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.featured {
+
+}
+.teamLogos {
+  border: solid;
+  border-color: white;
+  height: 50px;
+  margin: auto;
+  padding: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+.team {
+  width: 48px;
+}
+.test {
+  width: 150px;
+  font-size: 13px;
+  color: white;
+  /* border: solid; */
+  /* border-color: green; */
+  text-align: center;
+
+}
