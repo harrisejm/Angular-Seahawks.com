@@ -1,13 +1,23 @@
+
+
 <div class="mainBody">
   <div class="top">
     <div class="main">
       <img src="../assets/main.jpg" alt="">
     </div>
   </div>
-  <app-navigation-bar></app-navigation-bar>
-  <div class="container">
-    <app-headlines></app-headlines>
-    <app-featured></app-featured>
-  </div>
-  <app-footer></app-footer>
+<router-outlet></router-outlet>
+
 </div>
+
+
+
+
+
+
+<!-- <div class="container">
+  <h1>{{title}}</h1>
+  <a routerLink="test1">test1</a>
+  <a routerLink="test2">test2</a>
+  <router-outlet></router-outlet>
+</div> -->
