@@ -27,7 +27,18 @@ p.mainArticle {
   opacity: .5;
   margin-top: 18px;
   margin-bottom: 25px;
+  width: 350px;
+  float: left;
 }
+.box {
+  height: 80px;
+  margin-top: 15px;
+}
+
+.articleHeader {
+  margin-top: 10px;
+}
+
 div.bodyArticle {
 /*border: solid;*/
 margin-top: 30px;
@@ -47,4 +58,35 @@ img.moveArticle {
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+.icons {
+  float: right;
+  margin-top: 10px;
+}
+.iconLinks {
+  width: 33px;
+}
+img.profile {
+  border-radius: 50%;
+  width: 65px;
+  float: left;
+  margin-right: 15px;
+}
+div.profileInfo {
+  line-height: 18px;
+}
+
+.profileSite {
+  opacity: .7;
+  font-size: 12px;
+}
+div.profilePic {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+img.profileIcon {
+  width: 25px;
+}
+div.moveProfileIcon {
+  margin-top: -10px;
 }
