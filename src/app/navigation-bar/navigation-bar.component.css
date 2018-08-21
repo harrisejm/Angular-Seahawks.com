@@ -8,16 +8,13 @@ div.nav {
   width: 100%;
   /* position: fixed; */
 }
-
 img.logo {
   width: 50px;
   /* float: left; */
-
 }
 div.news {
   margin: 20px;
   width: 100%;
-
 }
 a.linkPage {
   font-size: 13px;
@@ -33,4 +30,10 @@ a:visited {
 }
 div.shop {
   float: right;
+}
+a.logoButton {
+  text-decoration: none;
+}
+a.logoButton:hover {
+  text-decoration: none;
 }
