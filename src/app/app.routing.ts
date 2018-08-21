@@ -15,10 +15,6 @@ const appRoutes: Routes = [
   component: Article1DisplayComponent,
 },
 {
-  path: 'article1/article2',
-  component: Article2DisplayComponent,
-},
-{
   path: 'article2',
   component: Article2DisplayComponent
 },
