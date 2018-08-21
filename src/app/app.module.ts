@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeDisplayComponent } from './home-display/home-display.component';
 import { Article1DisplayComponent } from './article1-display/article1-display.component';
 import { Article2DisplayComponent } from './article2-display/article2-display.component';
+import { Article3DisplayComponent } from './article3-display/article3-display.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { Article2DisplayComponent } from './article2-display/article2-display.co
     FooterComponent,
     HomeDisplayComponent,
     Article1DisplayComponent,
-    Article2DisplayComponent
+    Article2DisplayComponent,
+    Article3DisplayComponent
   ],
   imports: [
     BrowserModule,
