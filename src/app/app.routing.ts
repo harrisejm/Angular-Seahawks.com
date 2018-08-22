@@ -7,6 +7,9 @@ import { Article3DisplayComponent } from './article3-display/article3-display.co
 import { Article4DisplayComponent } from './article4-display/article4-display.component';
 import { Article5DisplayComponent } from './article5-display/article5-display.component';
 import { Article6DisplayComponent } from './article6-display/article6-display.component';
+import { Video1Component } from './video1/video1.component';
+import { Video2Component } from './video2/video2.component';
+import { Video3Component } from './video3/video3.component';
 
 const appRoutes: Routes = [
 {
@@ -36,8 +39,19 @@ const appRoutes: Routes = [
 {
   path: 'article6',
   component: Article6DisplayComponent
+},
+{
+  path: 'video1',
+  component: Video1Component
+},
+{
+  path: 'video2',
+  component: Video2Component
+},
+{
+  path: 'video3',
+  component: Video3Component
 }
-
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
