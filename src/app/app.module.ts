@@ -19,6 +19,7 @@ import { Article6DisplayComponent } from './article6-display/article6-display.co
 import { Video1Component } from './video1/video1.component';
 import { Video2Component } from './video2/video2.component';
 import { Video3Component } from './video3/video3.component';
+import { FeaturedVideosComponent } from './featured-videos/featured-videos.component';
 
 
 
@@ -38,7 +39,8 @@ import { Video3Component } from './video3/video3.component';
     Article6DisplayComponent,
     Video2Component,
     Video3Component,
-    Video1Component
+    Video1Component,
+    FeaturedVideosComponent
   ],
   imports: [
     BrowserModule,
