@@ -13,6 +13,8 @@ import { HomeDisplayComponent } from './home-display/home-display.component';
 import { Article1DisplayComponent } from './article1-display/article1-display.component';
 import { Article2DisplayComponent } from './article2-display/article2-display.component';
 import { Article3DisplayComponent } from './article3-display/article3-display.component';
+import { Article4DisplayComponent } from './article4-display/article4-display.component';
+import { Article5DisplayComponent } from './article5-display/article5-display.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { Article3DisplayComponent } from './article3-display/article3-display.co
     HomeDisplayComponent,
     Article1DisplayComponent,
     Article2DisplayComponent,
-    Article3DisplayComponent
+    Article3DisplayComponent,
+    Article4DisplayComponent,
+    Article5DisplayComponent
   ],
   imports: [
     BrowserModule,

@@ -4,12 +4,13 @@ import { Router, NavigationEnd } from '@angular/router';
 import { isPlatformBrowser } from '@angular/common';
 
 @Component({
-  selector: 'app-article3-display',
-  templateUrl: './article3-display.component.html',
-  styleUrls: ['./article3-display.component.css']
+  selector: 'app-article4-display',
+  templateUrl: './article4-display.component.html',
+  styleUrls: ['./article4-display.component.css']
 })
+
 @Injectable()
-export class Article3DisplayComponent implements OnInit {
+export class Article4DisplayComponent implements OnInit {
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object,
     private router: Router) { }
