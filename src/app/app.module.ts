@@ -15,6 +15,7 @@ import { Article2DisplayComponent } from './article2-display/article2-display.co
 import { Article3DisplayComponent } from './article3-display/article3-display.component';
 import { Article4DisplayComponent } from './article4-display/article4-display.component';
 import { Article5DisplayComponent } from './article5-display/article5-display.component';
+import { Article6DisplayComponent } from './article6-display/article6-display.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { Article5DisplayComponent } from './article5-display/article5-display.co
     Article2DisplayComponent,
     Article3DisplayComponent,
     Article4DisplayComponent,
-    Article5DisplayComponent
+    Article5DisplayComponent,
+    Article6DisplayComponent
   ],
   imports: [
     BrowserModule,
