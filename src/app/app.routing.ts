@@ -10,6 +10,7 @@ import { Article6DisplayComponent } from './article6-display/article6-display.co
 import { Video1Component } from './video1/video1.component';
 import { Video2Component } from './video2/video2.component';
 import { Video3Component } from './video3/video3.component';
+import { MoreNewsComponent } from './more-news/more-news.component';
 
 const appRoutes: Routes = [
 {
@@ -51,6 +52,10 @@ const appRoutes: Routes = [
 {
   path: 'video3',
   component: Video3Component
+},
+{
+  path: 'news',
+  component: MoreNewsComponent
 }
 ];
 

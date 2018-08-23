@@ -20,6 +20,7 @@ import { Video1Component } from './video1/video1.component';
 import { Video2Component } from './video2/video2.component';
 import { Video3Component } from './video3/video3.component';
 import { FeaturedVideosComponent } from './featured-videos/featured-videos.component';
+import { MoreNewsComponent } from './more-news/more-news.component';
 
 
 
@@ -40,7 +41,8 @@ import { FeaturedVideosComponent } from './featured-videos/featured-videos.compo
     Video2Component,
     Video3Component,
     Video1Component,
-    FeaturedVideosComponent
+    FeaturedVideosComponent,
+    MoreNewsComponent
   ],
   imports: [
     BrowserModule,
