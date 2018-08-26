@@ -1,12 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { CommentsService } from '../comments.service';
+import { Comment } from '../comments.model';
 
 @Component({
   selector: 'app-headlines',
   templateUrl: './headlines.component.html',
-  styleUrls: ['./headlines.component.css']
+  styleUrls: ['./headlines.component.css'],
+  providers: [CommentsService]
 })
 export class HeadlinesComponent implements OnInit {
-
+  comments: Comment[];
 
   headlines = "show";
   roundUp = null;
@@ -17,7 +21,7 @@ export class HeadlinesComponent implements OnInit {
     this.roundUp = null;
     this.showVideo = null;
   }
-  
+
   ShowRoundUp() {
     this.roundUp = "show";
     this.headlines = null;
@@ -41,7 +45,7 @@ export class HeadlinesComponent implements OnInit {
 
 
 
-  constructor() { }
+  constructor(private router: Router, private commmentService: CommentsService) { }
 
   ngOnInit() {
   }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Comment } from '../comments.model';
+
 
 @Component({
   selector: 'app-home-display',
@@ -8,6 +10,10 @@ import { Component, OnInit } from '@angular/core';
 export class HomeDisplayComponent implements OnInit {
 
   constructor() { }
+
+ comments: Comment[];
+
+
 
   ngOnInit() {
   }
