@@ -11,8 +11,6 @@ import { Comment } from '../comments.model';
 })
 export class HeadlinesComponent implements OnInit {
   comments: Comment[];
-  articleId: number;
-  commentsDisplay: Comment;
 
 
   headlines = "show";
@@ -47,10 +45,11 @@ export class HeadlinesComponent implements OnInit {
   // }
 
 
-  constructor() { }
+  constructor(private commentsService: CommentsService) { }
 
   ngOnInit() {
+ this.comments = this.commentsService.getComments();
+
   }
- commentsDisplay = this.CommentsService.getCommentsByArticle(2);
 
 }
