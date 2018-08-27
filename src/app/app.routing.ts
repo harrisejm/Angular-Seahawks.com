@@ -12,6 +12,7 @@ import { Video2Component } from './video2/video2.component';
 import { Video3Component } from './video3/video3.component';
 import { MoreNewsComponent } from './more-news/more-news.component';
 
+
 const appRoutes: Routes = [
 {
   path: '',

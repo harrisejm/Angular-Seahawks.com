@@ -23,7 +23,6 @@ import { FeaturedVideosComponent } from './featured-videos/featured-videos.compo
 import { MoreNewsComponent } from './more-news/more-news.component';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +41,7 @@ import { MoreNewsComponent } from './more-news/more-news.component';
     Video3Component,
     Video1Component,
     FeaturedVideosComponent,
-    MoreNewsComponent
+    MoreNewsComponent,
   ],
   imports: [
     BrowserModule,
