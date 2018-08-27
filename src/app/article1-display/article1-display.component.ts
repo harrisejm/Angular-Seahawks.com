@@ -14,14 +14,14 @@ import { CommentsService } from '../comments.service';
 export class Article1DisplayComponent implements OnInit {
   // articleId: number;
   //commentsDisplay: Comment[];
-// articleId: number = null;
+  pageId: number = null;
 
   constructor(private route: ActivatedRoute, private location: Location, private commentsService: CommentsService) { }
 
     ngOnInit() {
-      // this.route.params.forEach((urlParameters) => {
-      //   this.articleId = parseInt(urlParameters['id']);
-      // });
+      this.route.params.forEach((urlParameters) => {
+        this.pageId = parseInt(urlParameters['id']);
+      });
     }
   commentsDisplay = this.commentsService.getCommentsByArticle(1);
 }

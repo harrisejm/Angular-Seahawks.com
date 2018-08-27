@@ -35,17 +35,11 @@ export class HeadlinesComponent implements OnInit {
     this.roundUp = null;
   }
 
-  //   hideShow() {
-  //     let x = document.getElementById(this.potionId);
-  //     if (x.style.display === "none") {
-  //         x.style.display = "block";
-  //     } else {
-  //         x.style.display = "none";
-  //     }
-  // }
+  article1() {
+    this.router.navigate(['article1', 1]);
+  };
 
-
-  constructor(private commentsService: CommentsService) { }
+  constructor(private router: Router, private commentsService: CommentsService) { }
 
   ngOnInit() {
  this.comments = this.commentsService.getComments();
