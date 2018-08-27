@@ -13,8 +13,8 @@ import { CommentsService } from '../comments.service';
 
 export class Article1DisplayComponent implements OnInit {
   // articleId: number;
-  commentsDisplay: Comment[];
-// albumId: number = null;
+  //commentsDisplay: Comment[];
+// articleId: number = null;
 
   constructor(private route: ActivatedRoute, private location: Location, private commentsService: CommentsService) { }
 
@@ -23,5 +23,5 @@ export class Article1DisplayComponent implements OnInit {
       //   this.articleId = parseInt(urlParameters['id']);
       // });
     }
-  commentsDisplay = this.commentsService.getCommentsByArticle(2);
+  commentsDisplay = this.commentsService.getCommentsByArticle(1);
 }
