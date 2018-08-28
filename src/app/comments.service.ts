@@ -6,23 +6,24 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 
 @Injectable()
 export class CommentsService {
-  COMMENTS: FirebaseListObservable<any[]>;
+ COMMENTS: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
-    this.COMMENTS = database.list('comment');
+     this.COMMENTS = database.list('comment');
   }
+////recentPostsRef = firebase.database().ref('articleId').equalTo(2);
 
   getComments() {
     console.log(this.COMMENTS);
     return this.COMMENTS;
+  //  return database.ref('articleId').equalTo(2);
   }
-
   // getCommentsByArticle(id: number) {
   //   let userComments: Comment[] = [];
   //
   //   this.COMMENTS.forEach(function(comment){
-  //     if (comment.articleId === id) {
-  //       userComments.push(comment)
+  //     if (this.comment.articleId === id) {
+  //       userComments.push(this.comment)
   //     }
   //   });
   //   return userComments;
@@ -34,8 +35,5 @@ export class CommentsService {
     // }
     // return userComments;
   //}
-
-
-
 
 }
