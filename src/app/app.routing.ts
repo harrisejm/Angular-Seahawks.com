@@ -19,7 +19,7 @@ const appRoutes: Routes = [
   component: HomeDisplayComponent
 },
 {
-  path: 'article1/:id',
+  path: 'article1',
   component: Article1DisplayComponent,
 },
 {

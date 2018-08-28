@@ -4,6 +4,10 @@ import { FormsModule }  from '@angular/forms';
 import { routing } from './app.routing';
 import { HttpModule } from '@angular/http';
 
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
 import { AppComponent } from './app.component';
 import { FeaturedComponent } from './featured/featured.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
@@ -22,6 +26,12 @@ import { Video3Component } from './video3/video3.component';
 import { FeaturedVideosComponent } from './featured-videos/featured-videos.component';
 import { MoreNewsComponent } from './more-news/more-news.component';
 
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 @NgModule({
   declarations: [
@@ -47,7 +57,10 @@ import { MoreNewsComponent } from './more-news/more-news.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

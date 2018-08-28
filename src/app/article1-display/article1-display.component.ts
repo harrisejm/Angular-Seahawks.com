@@ -3,6 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Comment } from '../comments.model';
 import { CommentsService } from '../comments.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-article1-display',
@@ -12,8 +13,9 @@ import { CommentsService } from '../comments.service';
 })
 
 export class Article1DisplayComponent implements OnInit {
+  albums: FirebaseListObservable<any[]>;
   // articleId: number;
-  commentsDisplay: Comment[];
+  //commentsDisplay: Comment[];
 // albumId: number = null;
 
   constructor(private route: ActivatedRoute, private location: Location, private commentsService: CommentsService) { }
@@ -23,5 +25,5 @@ export class Article1DisplayComponent implements OnInit {
       //   this.articleId = parseInt(urlParameters['id']);
       // });
     }
-  commentsDisplay = this.commentsService.getCommentsByArticle(2);
+  commentsDisplay = this.commentsService.getComments();  //getCommentsByArticle(2);
 }
