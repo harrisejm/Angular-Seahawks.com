@@ -19,8 +19,11 @@ export class Article1DisplayComponent implements OnInit {
   //commentsDisplay: Comment[];
 
   submitForm(userName: string, userPost: string) {
-    let newComment: Comment = new Comment(userName, userPost, 2, 5);
+    let newComment: Comment = new Comment(userName, userPost, 2, this.commentsService.getTime());
+  //  let date = this.commentsService.getTime();
+    if (userName.length > 0 && userPost.length > 0) {
     this.commentsService.addComment(newComment);
+  }
 }
 
 

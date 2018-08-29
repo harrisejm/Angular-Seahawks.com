@@ -20,8 +20,27 @@ addComment(newComment: Comment) {
   getComments() {
     console.log(this.COMMENTS);
     return this.COMMENTS;
-  //  return database.ref('articleId').equalTo(2);
   }
+
+  getTime() {
+  let today = new Date();
+  let dateToday = today.toDateString();
+  let minute = today.getMinutes();
+  let hoursTotal = today.getHours();
+  let hour;
+  let x;
+  if (hoursTotal > 12) {
+   hour = hoursTotal-12;
+   x = " PM"
+  } else {
+   hour = hoursTotal;
+   x = " AM"
+  }
+  return dateToday + " " + hour + ":" + minute + x;
+
+  }
+
+
   // getCommentsByArticle(id: number) {
   //   let userComments: Comment[] = [];
   //
