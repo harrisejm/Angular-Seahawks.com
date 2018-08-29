@@ -63,10 +63,38 @@
 
 </div>
   </div>
+
+  <div class="comments">
+
+    <div class="enterName">
+      <label>user name:</label>
+      <br>
+      <input #userName>
+    </div>
+
+    <div class="enterPost">
+      <label>post:</label>
+      <br>
+      <input #userPost>
+    </div>
+    <button (click)="submitForm(userName.value, userPost.value); userName.value=''; usePost.value='';">Post</button>
+
+  <div *ngFor="let comment of COMMENTS | async">
+    <div class="postBox">
+
+      <div class="userName">
+        <p>{{comment.userName}}</p>
+      </div>
+      <div class="userPost">
+        <p>{{comment.userPost}}</p>
+      </div>
+    </div>
+  </div>
+
+    </div>  
+
+
+
   <app-featured></app-featured>
 </div>
     <app-footer></app-footer>
-    <div *ngFor="let comment of COMMENTS | async">
-      <h3>{{comment.userName}}</h3>
-      <h4>{{comment.userPost}}</h4>
-    </div>

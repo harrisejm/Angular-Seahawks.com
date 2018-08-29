@@ -17,14 +17,19 @@ export class Article1DisplayComponent implements OnInit {
   COMMENTS: FirebaseListObservable<any[]>;
   // articleId: number;
   //commentsDisplay: Comment[];
-// albumId: number = null;
+
+  submitForm(userName: string, userPost: string) {
+    let newComment: Comment = new Comment(userName, userPost, 2, 5);
+    this.commentsService.addComment(newComment);
+}
+
 
   constructor(private route: ActivatedRoute, private location: Location, private commentsService: CommentsService, private db: AngularFireDatabase) {
     //this.COMMENTS = db.list('comment');
     this.COMMENTS = this.db.list('comment', {
         query: {
             orderByChild: 'articleId',
-            equalTo: "1",
+            equalTo: 2,
         }
     });
    }

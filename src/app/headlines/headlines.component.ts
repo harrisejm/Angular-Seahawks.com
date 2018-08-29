@@ -42,7 +42,7 @@ export class HeadlinesComponent implements OnInit {
   constructor(private router: Router, private commentsService: CommentsService) { }
 
   ngOnInit() {
- this.comments = this.commentsService.getComments();
+ //this.comments = this.commentsService.getComments();
 
   }
 

@@ -13,6 +13,10 @@ export class CommentsService {
   }
 ////recentPostsRef = firebase.database().ref('articleId').equalTo(2);
 
+addComment(newComment: Comment) {
+  this.COMMENTS.push(newComment);
+}
+
   getComments() {
     console.log(this.COMMENTS);
     return this.COMMENTS;

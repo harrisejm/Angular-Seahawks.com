@@ -75,7 +75,6 @@ img.profile {
 div.profileInfo {
   line-height: 18px;
 }
-
 .profileSite {
   opacity: .7;
   font-size: 12px;
@@ -89,4 +88,24 @@ img.profileIcon {
 }
 div.moveProfileIcon {
   margin-top: -10px;
+}
+/* ----comments---- */
+div.comments {
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+div.postBox {
+  margin: 10px;
+  padding: 10px;
+  border: solid;
+  border-width: 1px;
+  width: 500px;
+}
+div.userName {
+}
+div.userPost {
+
 }
