@@ -26,9 +26,11 @@ addComment(newComment: Comment) {
   let today = new Date();
   let dateToday = today.toDateString();
   let minute = today.getMinutes();
+  let zero = "";
   let hoursTotal = today.getHours();
   let hour;
   let x;
+
   if (hoursTotal > 12) {
    hour = hoursTotal-12;
    x = " PM"
@@ -36,7 +38,10 @@ addComment(newComment: Comment) {
    hour = hoursTotal;
    x = " AM"
   }
-  return dateToday + " " + hour + ":" + minute + x;
+  if (minute < 10) {
+  zero = "0";
+  }
+  return dateToday + " " + hour + ":" + zero + minute + x;
 
   }
 

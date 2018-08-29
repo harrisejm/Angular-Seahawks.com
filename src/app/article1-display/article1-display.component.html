@@ -64,13 +64,34 @@
 </div>
   </div>
 
+  <div class="articlePics">
+    <a href="https://www.verizonwireless.com/">
+  <img src="../assets/verizon.png" alt="Verizon" class="moveArticle"></a>
+  </div>
 
+<!-- user comments -->
   <div class="commentTitle">
     <div class="title">
       <h4>Comments</h4>
     </div>
   </div>
+
+
   <div class="comments">
+
+    <div class="user">
+    <div class="enterName">
+      <label><strong>USER NAME:</strong></label>
+      <br>
+      <input #userName>
+    </div>
+    <div class="enterPost">
+      <label><strong>POST:</strong></label>
+      <br>
+      <input class="input" #userPost>
+    </div>
+    <button (click)="submitForm(userName.value, userPost.value); userName.value=''; userPost.value='';">Post</button>
+  </div>
 
   <div *ngFor="let comment of COMMENTS | async">
     <div class="postBox">
@@ -87,19 +108,6 @@
 
     </div>
   </div>
-  <div class="enterName">
-    <label>user name:</label>
-    <br>
-    <input #userName required>
-  </div>
-
-  <div class="enterPost">
-    <label>post:</label>
-    <br>
-    <input #userPost required>
-  </div>
-  <button (click)="submitForm(userName.value, userPost.value); userName.value=''; userPost.value='';">Post</button>
-
 
     </div>
 
