@@ -27,7 +27,13 @@ This website is a recreation of Seahawks.com built with Angular. A user can view
 
 - 7.) For any article or video, a user can post comments in the comments section. All comments will be stored in a database and can be viewed in the comments section immediately after posting.
 
-## Setup/Installation
+
+
+## Setup
+
+* Site is deployed live: https://comments-68196.firebaseapp.com/
+
+To run locally, follow the instructions below:
 
 * Clone this repository
 * Save to Desktop
@@ -59,7 +65,7 @@ This website is a recreation of Seahawks.com built with Angular. A user can view
    Angular
    HTML
    CSS
-   
+
 -------------------------------------------------------
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
