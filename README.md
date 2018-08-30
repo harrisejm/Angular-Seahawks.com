@@ -25,7 +25,7 @@ This website is a recreation of Seahawks.com built with Angular. A user can view
 
 - 6.) From the navigation bar, a user can click on the "SCHEDULE" button and be routed to a page that displays Seahawks 2018 schedule.
 
-- 7.) For any article or video, a user can post comments in the comments section. All comments will be stored in a database and can be viewed in the comments section immediately after posting.
+- 7.) For any article or video, a user can post comments in the comments section. All comments will be stored in a database and can be viewed in the comments section immediately after posting. All post will automatically include the date and time of the post.
 
 
 
