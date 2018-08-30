@@ -6,46 +6,42 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 
 @Injectable()
 export class CommentsService {
- COMMENTS: FirebaseListObservable<any[]>;
+  COMMENTS: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
-     this.COMMENTS = database.list('comment');
+    this.COMMENTS = database.list('comment');
   }
-////recentPostsRef = firebase.database().ref('articleId').equalTo(2);
 
-addComment(newComment: Comment) {
-  this.COMMENTS.push(newComment);
-}
-
+  addComment(newComment: Comment) {
+    this.COMMENTS.push(newComment);
+  }
+  
   getComments() {
     console.log(this.COMMENTS);
     return this.COMMENTS;
   }
 
   getTime() {
-  let today = new Date();
-  let dateToday = today.toDateString();
-  let minute = today.getMinutes();
-  let zero = "";
-  let hoursTotal = today.getHours();
-  let hour;
-  let x;
+    let today = new Date();
+    let dateToday = today.toDateString();
+    let minute = today.getMinutes();
+    let zero = "";
+    let hoursTotal = today.getHours();
+    let hour;
+    let x;
 
-  if (hoursTotal > 12) {
-   hour = hoursTotal-12;
-   x = " PM"
-  } else {
-   hour = hoursTotal;
-   x = " AM"
+    if (hoursTotal > 12) {
+      hour = hoursTotal-12;
+      x = " PM"
+    } else {
+      hour = hoursTotal;
+      x = " AM"
+    }
+    if (minute < 10) {
+      zero = "0";
+    }
+    return dateToday + " " + hour + ":" + zero + minute + x;
   }
-  if (minute < 10) {
-  zero = "0";
-  }
-  return dateToday + " " + hour + ":" + zero + minute + x;
-
-  }
-
-
   // getCommentsByArticle(id: number) {
   //   let userComments: Comment[] = [];
   //
@@ -56,12 +52,12 @@ addComment(newComment: Comment) {
   //   });
   //   return userComments;
 
-    // for (let i = 0; i < COMMENTS.length; i++) {
-    //   if (COMMENTS[i].articleId === id) {
-    //     userComments.push(COMMENTS[i])
-    //   }
-    // }
-    // return userComments;
+  // for (let i = 0; i < COMMENTS.length; i++) {
+  //   if (COMMENTS[i].articleId === id) {
+  //     userComments.push(COMMENTS[i])
+  //   }
+  // }
+  // return userComments;
   //}
 
 }

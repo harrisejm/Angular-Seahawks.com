@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
-import { Location } from '@angular/common';
 import { Comment } from '../comments.model';
 import { CommentsService } from '../comments.service';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
@@ -15,42 +13,25 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 
 export class Article1DisplayComponent implements OnInit {
   COMMENTS: FirebaseListObservable<any[]>;
-  // articleId: number;
-  //commentsDisplay: Comment[];
 
   submitForm(userName: string, userPost: string) {
-    let newComment: Comment = new Comment(userName, userPost, 2, this.commentsService.getTime());
-  //  let date = this.commentsService.getTime();
+    let newComment: Comment = new Comment(userName, userPost, 1, this.commentsService.getTime());
     if (userName.length > 0 && userPost.length > 0) {
-    this.commentsService.addComment(newComment);
-  }
-}
-
-
-  constructor(private route: ActivatedRoute, private location: Location, private commentsService: CommentsService, private db: AngularFireDatabase) {
-    //this.COMMENTS = db.list('comment');
-    this.COMMENTS = this.db.list('comment', {
-        query: {
-            orderByChild: 'articleId',
-            equalTo: 2,
-        }
-    });
-   }
-
-   // testShow(): void {
-   //   this.COMMENTS = this.db.list('comment', {
-   //       query: {
-   //           orderByChild: 'articleId',
-   //           equalTo: 2,
-   //       }
-   //   });
-   // }
-
-
-    ngOnInit() {
-      // this.route.params.forEach((urlParameters) => {
-      //   this.articleId = parseInt(urlParameters['id']);
-      // });
+      this.commentsService.addComment(newComment);
     }
-  commentsDisplay = this.commentsService.getComments();//getCommentsByArticle(2);
+  }
+
+  constructor( private commentsService: CommentsService, private db: AngularFireDatabase) {
+    this.COMMENTS = this.db.list('comment', {
+      query: {
+        orderByChild: 'articleId',
+        equalTo: 1,
+      }
+    });
+  }
+
+  ngOnInit() {
+
+  }
+  // commentsDisplay = this.commentsService.getComments();//getCommentsByArticle(2);
 }

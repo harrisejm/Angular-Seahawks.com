@@ -1,16 +1,13 @@
 
 div.nav {
   margin-top: -5px;
-  margin-left: -8px;
   background-color: #001a4d;
   color: white;
   height: 62px;
   width: 100%;
-  /* position: fixed; */
 }
 img.logo {
   width: 50px;
-  /* float: left; */
 }
 div.news {
   margin: 20px;
