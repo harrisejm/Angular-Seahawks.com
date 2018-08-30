@@ -17,18 +17,50 @@ This website is a recreation of Seahawks.com built with Angular. A user can view
 
 - 3.) From the home page a user can click on a video link and be routed to a new page where the video can be viewed. (Link to you tube)
 
+- 4.) From the footer, a user can click on any NFL team logo and be directed that teams official website.
+
 - 4.) From the navigation bar, a user can click on the "NEWS" button and be routed to a page that lists all news articles. The user can then click on each individual article to view its contents.
 
 - 5.) From the navigation bar, a user can click on the "VIDEO" button and be routed to a page that displays all videos. The user can then click on each individual video to watch it. (Link to you tube)
 
 - 6.) From the navigation bar, a user can click on the "SCHEDULE" button and be routed to a page that displays Seahawks 2018 schedule.
 
-- 7.) For any article or video users can post to a comments section below. All comments will be stored in a database.
+- 7.) For any article or video, a user can post comments in the comments section. All comments will be stored in a database and can be viewed in the comments section immediately after posting.
+
+## Setup/Installation
+
+* Clone this repository
+* Save to Desktop
+* While in the root directory, enter into the terminal "npm install"
+* After the installation is complete, enter into the terminal "ng serve", them navigate to http://localhost:4200/.
+
+* Firebase
+
+  - In order to read and post comments in the comments section (of each article/video), you must have access to a Firebase database.
+
+  IF YOU WOULD LIKE TO USE THE EXISTING DATABASE, FOLLOW THE INSTRUCTIONS BELOW. If you would like to use your own database, feel free to set it up on your own.
+
+  - In the app directory (JavaScript-Seahawks.com/src/app) create a file called "api-keys.ts". Copy into the file the following code:
+
+  export const masterFirebaseConfig = {
+      apiKey: "...",
+      authDomain: "...",
+      databaseURL: "...",
+      storageBucket: "...",
+      messagingSenderId: "..."
+    };
+
+   - EMAIL EDDIE HARRIS at harrisejm@gmail.com for API-key and further instructions.
 
 
+   ## Technologies Used
 
-
-----------------------------------------------------------------------------------
+   JavaScript
+   Angular
+   HTML
+   CSS
+   
+-------------------------------------------------------
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
 ## Development server
