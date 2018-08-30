@@ -11,6 +11,7 @@ import { Video1Component } from './video1/video1.component';
 import { Video2Component } from './video2/video2.component';
 import { Video3Component } from './video3/video3.component';
 import { MoreNewsComponent } from './more-news/more-news.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 
 const appRoutes: Routes = [
@@ -57,6 +58,10 @@ const appRoutes: Routes = [
 {
   path: 'news',
   component: MoreNewsComponent
+},
+{
+  path: 'schedule',
+  component: ScheduleComponent
 }
 ];
 
