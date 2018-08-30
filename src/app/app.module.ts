@@ -26,6 +26,10 @@ import { Video3Component } from './video3/video3.component';
 import { FeaturedVideosComponent } from './featured-videos/featured-videos.component';
 import { MoreNewsComponent } from './more-news/more-news.component';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { Video4Component } from './video4/video4.component';
+import { Video5Component } from './video5/video5.component';
+import { Video6Component } from './video6/video6.component';
+import { MoreVideosComponent } from './more-videos/more-videos.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -54,6 +58,10 @@ export const firebaseConfig = {
     FeaturedVideosComponent,
     MoreNewsComponent,
     ScheduleComponent,
+    Video4Component,
+    Video5Component,
+    Video6Component,
+    MoreVideosComponent,
   ],
   imports: [
     BrowserModule,

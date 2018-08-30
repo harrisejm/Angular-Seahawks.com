@@ -12,6 +12,10 @@ import { Video2Component } from './video2/video2.component';
 import { Video3Component } from './video3/video3.component';
 import { MoreNewsComponent } from './more-news/more-news.component';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { Video4Component } from './video4/video4.component';
+import { Video5Component } from './video5/video5.component';
+import { Video6Component } from './video6/video6.component';
+import { MoreVideosComponent } from './more-videos/more-videos.component';
 
 
 const appRoutes: Routes = [
@@ -62,6 +66,22 @@ const appRoutes: Routes = [
 {
   path: 'schedule',
   component: ScheduleComponent
+},
+{
+  path: 'video4',
+  component: Video4Component
+},
+{
+  path: 'video5',
+  component: Video5Component
+},
+{
+  path: 'video6',
+  component: Video6Component
+},
+{
+  path: 'videos',
+  component: MoreVideosComponent
 }
 ];
 

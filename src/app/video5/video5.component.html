@@ -1,0 +1,61 @@
+<div class="articleBox">
+  <div class="videoTop">
+    <div class="underline">
+      <h4><strong>NFL Films</strong></h4>
+    </div>
+  </div>
+  <div class="mainVideoFormat">
+    <div class="videoBody">
+      <iframe src="https://player.vimeo.com/video/145061642" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    <div class="videoTitle">
+      <h4><strong>The Making of Seahawks vs Monsters</strong></h4>
+      <p class="videoInfo">Behind the scenes of the award winning movie, Seahawks vs Monsters</p>
+    </div>
+  </div>
+
+  <div class="adV">
+    <a href="https://www.verizonwireless.com/">
+      <img src="../assets/verizon.png" alt="Verizon" class="moveV">
+    </a>
+  </div>
+
+    <!-- user comments -->
+    <div class="commentTitle">
+      <div class="title">
+        <h4>Comments</h4>
+      </div>
+    </div>
+    <div class="comments">
+      <div class="user">
+        <div class="enterName">
+          <label><strong>USER NAME:</strong></label>
+          <br>
+          <input #userName>
+        </div>
+        <div class="enterPost">
+          <label><strong>POST:</strong></label>
+          <br>
+          <input class="input" #userPost>
+        </div>
+        <button (click)="submitForm(userName.value, userPost.value); userName.value=''; userPost.value='';">Post</button>
+      </div>
+      <div *ngFor="let comment of COMMENTS | async">
+        <div class="postBox">
+          <div class="userName">
+            <p>{{comment.userName}}</p>
+          </div>
+          <div class="userPost">
+            <p>{{comment.userPost}}</p>
+          </div>
+          <div class="time">
+            <p>{{comment.date}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <app-featured-videos></app-featured-videos>
+</div>
+<app-footer></app-footer>
