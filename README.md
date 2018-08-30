@@ -21,12 +21,14 @@ This website is a recreation of Seahawks.com built with Angular. A user can view
 
 - 5.) From the navigation bar, a user can click on the "VIDEO" button and be routed to a page that displays all videos. The user can then click on each individual video to watch it. (Link to you tube)
 
-- 6.) From the navigation bar, a user can click on the "PHOTOS" button and be routed to a page that displays Seahawks related photos.
+- 6.) From the navigation bar, a user can click on the "SCHEDULE" button and be routed to a page that displays Seahawks 2018 schedule.
 
-- 7.) For any article, video or photo, users can post to a comments section below. All comments will be stored in a database.
+- 7.) For any article or video users can post to a comments section below. All comments will be stored in a database.
 
 
 
+
+----------------------------------------------------------------------------------
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
 ## Development server

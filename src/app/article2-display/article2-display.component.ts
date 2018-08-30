@@ -10,7 +10,6 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
   providers: [CommentsService]
 })
 
-
 export class Article2DisplayComponent implements OnInit {
 
   COMMENTS: FirebaseListObservable<any[]>;
@@ -33,7 +32,6 @@ export class Article2DisplayComponent implements OnInit {
 
   ngOnInit() {
 
-    }
-
+  }
 
 }

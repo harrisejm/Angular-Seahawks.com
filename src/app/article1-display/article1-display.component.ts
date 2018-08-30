@@ -3,7 +3,6 @@ import { Comment } from '../comments.model';
 import { CommentsService } from '../comments.service';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
-
 @Component({
   selector: 'app-article1-display',
   templateUrl: './article1-display.component.html',
@@ -33,5 +32,5 @@ export class Article1DisplayComponent implements OnInit {
   ngOnInit() {
 
   }
-  // commentsDisplay = this.commentsService.getComments();//getCommentsByArticle(2);
+
 }

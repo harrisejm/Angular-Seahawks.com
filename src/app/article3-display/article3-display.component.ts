@@ -30,8 +30,8 @@ export class Article3DisplayComponent implements OnInit {
     });
   }
 
-    ngOnInit() {
+  ngOnInit() {
 
-    }
+  }
 
 }

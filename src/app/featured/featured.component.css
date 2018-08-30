@@ -1,8 +1,8 @@
 div.featuredContentBox {
   margin-top: 20px;
-border-bottom: solid;
-border-bottom-width: 1px;
-border-color: gray;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+  border-color: gray;
 }
 div.featuredContent {
   border-bottom: solid;
@@ -40,5 +40,5 @@ div.mainArticleFormate {
   min-height: 510px;
 }
 .mainArticleBody {
- padding: 20px;
+  padding: 20px;
 }

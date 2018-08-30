@@ -3,7 +3,6 @@ div.articleBox {
   margin-right: auto;
   max-width: 1300px;
   padding: 25px;
-
 }
 div.mainArticleFormate {
   font-family: Arial, Helvetica, sans-serif;
@@ -34,11 +33,9 @@ p.mainArticle {
   height: 80px;
   margin-top: 15px;
 }
-
 .articleHeader {
   margin-top: 10px;
 }
-
 div.bodyArticle {
 margin-top: 30px;
 margin-left: auto;
@@ -74,7 +71,6 @@ img.profile {
 div.profileInfo {
   line-height: 18px;
 }
-
 .profileSite {
   opacity: .7;
   font-size: 12px;
@@ -89,7 +85,6 @@ img.profileIcon {
 div.moveProfileIcon {
   margin-top: -10px;
 }
-
 .adV {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -121,11 +116,9 @@ div.comments {
   width: 600px;
   background-color: white;
 }
-
 input.input {
   width: 100%;
 }
-
 div.enterName {
 
 }
