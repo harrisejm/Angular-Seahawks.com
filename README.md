@@ -31,7 +31,8 @@ This website is a recreation of Seahawks.com built with Angular. A user can view
 
 ## Setup
 
-* Site is deployed live: https://comments-68196.firebaseapp.com/
+* Site is deployed live: https://seahawks-311da.firebaseapp.com/
+  - formerly at https://comments-68196.firebaseapp.com/
 
 To run locally, follow the instructions below:
 
