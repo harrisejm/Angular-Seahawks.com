@@ -71,13 +71,13 @@ img.seahawksLogo {
 
 }
 .teamLogos {
-
+ width: 100%;
 }
 .team {
   width: 48px;
 }
 .test {
-  width: 150px;
+  width: 250px;
   height: 80px;
   font-size: 13px;
   text-align: center;
@@ -89,4 +89,54 @@ img.seahawksLogo {
   font-size: 13px;
   color: white;
   text-align: center;
+}
+.moveTeams {
+}
+.moveTeams1 {
+  float: left;
+  width: 50%;
+}
+
+.containerTeams {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* division names wrap at the same time */
+@media (max-width: 702px) and (min-width: 563px) {
+  td.move {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+/* division names wrap at the same time */
+@media (max-width: 390px) {
+  td.move {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+
+/* @media (max-width: 455px) {
+  #teamFooter {
+    height: 750px;
+  }
+} */
+
+@media (max-width: 537px) {
+  div.teamFooter {
+    height: 790px;
+  }
+  div.moveTeams1 {
+    width: 90%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div.moveTeams {
+    width: 90%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

@@ -26,7 +26,7 @@ p.mainArticle {
   opacity: .5;
   margin-top: 18px;
   margin-bottom: 25px;
-  width: 350px;
+  width: 300px;
   float: left;
 }
 .box {
@@ -49,15 +49,30 @@ padding: 30px;
   margin: 23px;
   text-align: center;
   font-size: 15px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 img.moveArticle {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  width: 100%;
 }
 .icons {
   float: right;
   margin-top: 10px;
+}
+@media (max-width: 560px) {
+  .icons {
+    float: left;
+  }
+  .articleHeader {
+    float: left;
+  }
+  .datePosted {
+    margin-bottom: 0px;
+  }
 }
 .iconLinks {
   width: 33px;
@@ -113,7 +128,7 @@ div.comments {
   padding: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 600px;
+  max-width: 600px;
   background-color: white;
 }
 input.input {
@@ -152,4 +167,23 @@ div.time {
   font-size: 12px;
   border-bottom: solid;
   border-width: 1px;
+}
+@media (max-width: 650px) and (min-width: 500px) {
+  p.mainArticle {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+@media (max-width: 499px) {
+  p.mainArticle {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  div.bodyArticle {
+  font-size: 16px;
+  }
+  div.postBox {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
