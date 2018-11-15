@@ -60,41 +60,49 @@
       </div>
     </div>
 
-    <!-- user comments -->
-    <div class="commentTitle">
-      <div class="title">
-        <h4>Comments</h4>
+    <div class="forMobile">
+      <div class="adV">
+        <a href="https://www.budlight.com/">
+          <img src="../assets/hawksAd.png" alt="Verizon" class="moveV">
+        </a>
       </div>
-    </div>
-    <div class="comments">
-      <div class="user">
-        <div class="enterName">
-          <label><strong>USER NAME:</strong></label>
-          <br>
-          <input #userName>
-        </div>
-        <div class="enterPost">
-          <label><strong>POST:</strong></label>
-          <br>
-          <input class="input" #userPost>
-        </div>
-        <button (click)="submitForm(userName.value, userPost.value); userName.value=''; userPost.value='';">Post</button>
-      </div>
-      <div *ngFor="let comment of COMMENTS | async">
-        <div class="postBox">
-          <div class="userName">
-            <p>{{comment.userName}}</p>
-          </div>
-          <div class="userPost">
-            <p>{{comment.userPost}}</p>
-          </div>
-          <div class="time">
-            <p>{{comment.date}}</p>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <app-featured></app-featured>
+      <!-- user comments -->
+      <div class="commentTitle">
+        <div class="title">
+          <h4>Comments</h4>
+        </div>
+      </div>
+      <div class="comments">
+        <div class="user">
+          <div class="enterName">
+            <label><strong>USER NAME:</strong></label>
+            <br>
+            <input #userName>
+          </div>
+          <div class="enterPost">
+            <label><strong>POST:</strong></label>
+            <br>
+            <input class="input" #userPost>
+          </div>
+          <button (click)="submitForm(userName.value, userPost.value); userName.value=''; userPost.value='';">Post</button>
+        </div>
+        <div *ngFor="let comment of COMMENTS | async">
+          <div class="postBox">
+            <div class="userName">
+              <p>{{comment.userName}}</p>
+            </div>
+            <div class="userPost">
+              <p>{{comment.userPost}}</p>
+            </div>
+            <div class="time">
+              <p>{{comment.date}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <app-featured></app-featured>
+    </div>
   </div>
   <app-footer></app-footer>

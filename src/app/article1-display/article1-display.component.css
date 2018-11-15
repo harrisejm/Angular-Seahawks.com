@@ -2,12 +2,19 @@ div.articleBox {
   margin-left: auto;
   margin-right: auto;
   max-width: 1300px;
-  padding: 25px;
 }
+/*  */
+.forMobile {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+/*  */
+
 div.mainArticleFormate {
   font-family: Arial, Helvetica, sans-serif;
   background-color: white;
-}
+  margin: 25px;
+} /*  */
 .mainStory {
   width: 100%;
   height: 100%;
@@ -128,9 +135,9 @@ img.moveV {
 /* ----comments---- */
 div.commentTitle {
   margin-top: 20px;
-border-bottom: solid;
-border-bottom-width: 1px;
-border-color: gray;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+  border-color: gray;
 }
 div.title{
   border-bottom: solid;
@@ -188,7 +195,27 @@ div.time {
     line-height: 35px;
   }
 }
+   /*  */
 @media (max-width: 499px) {
+  div div.mainArticleFormate {
+    margin: 0px;
+  }
+  div.forMobile {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  div.bodyArticle {
+    padding: 20px;
+    margin-top: 15px;
+  }
+  div.comments {
+    padding: 10px;
+  }
+  div.user {
+    margin: 10px;
+  }
+/*  */
+
   p.mainArticle {
     font-size: 20px;
     line-height: 25px;
@@ -197,7 +224,7 @@ div.time {
   font-size: 16px;
   }
   div.postBox {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }

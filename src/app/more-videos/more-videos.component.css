@@ -44,8 +44,10 @@ a.headlineLink:visited {
 div.mainArticleFormate {
   font-family: Arial, Helvetica, sans-serif;
   background-color: white;
-  min-height: 420px;
+  /* min-height: 420px; */
+  height: 100%;
 }
+
 .mainArticleBody {
   padding: 20px;
 }
@@ -62,6 +64,9 @@ img.moveAd{
   margin-right: auto;
   display: block;
   width: 100%;
+}
+.topVideo {
+
 }
 @media (max-width: 767px) {
   .topVideo {

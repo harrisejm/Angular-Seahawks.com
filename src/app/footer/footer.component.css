@@ -1,5 +1,5 @@
 div.footer {
-  height: 190px;
+  min-height: 190px;
   background-color: #001a4d;
   color: #DCDCDC;
   width: 100%;
@@ -7,6 +7,7 @@ div.footer {
   font-weight: 100;
   font-size: 11px;
   text-align: center;
+  padding-bottom: 10px;
 }
 div.navBarFooter {
   margin-top: 35px;

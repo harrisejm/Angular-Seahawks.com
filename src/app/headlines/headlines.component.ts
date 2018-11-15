@@ -17,22 +17,34 @@ export class HeadlinesComponent implements OnInit {
   roundUp = null;
   showVideo = null;
 
+
   showHeadLines() {
     this.headlines = "show";
     this.roundUp = null;
     this.showVideo = null;
+    document.getElementById("headlineLink1").style.borderBottom = "solid";
+    document.getElementById("headlineLink2").style.borderBottom = null;
+    document.getElementById("headlineLink3").style.borderBottom = null;
   }
 
   ShowRoundUp() {
     this.roundUp = "show";
     this.headlines = null;
     this.showVideo = null;
+    document.getElementById("headlineLink1").classList.remove("hightLight");
+    document.getElementById("headlineLink1").style.borderBottom = null;
+    document.getElementById("headlineLink2").style.borderBottom = "solid";
+    document.getElementById("headlineLink3").style.borderBottom = null;
   }
 
   ShowVideo() {
     this.showVideo = "show";
     this.headlines = null;
     this.roundUp = null;
+    document.getElementById("headlineLink1").classList.remove("hightLight");
+    document.getElementById("headlineLink1").style.borderBottom = null;
+    document.getElementById("headlineLink2").style.borderBottom = null;
+    document.getElementById("headlineLink3").style.borderBottom = "solid";
   }
 
   article1() {
